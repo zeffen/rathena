@@ -2188,6 +2188,11 @@
 	packet(0x09DF,7); // ZC_ACK_WHISPER02
 #endif
 
+// 2014-02-05bRagexeRE
+#if PACKETVER >= 20140205
+	packet(0x09DA,-1);
+#endif
+
 // 2014-10-08Ragexe
 #if PACKETVER >= 20141008
 	parseable_packet(0x9FB, -1, clif_parse_pet_evolution, 2, 4, 6); // CZ_PET_EVOLUTION
